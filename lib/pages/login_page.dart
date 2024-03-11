@@ -168,7 +168,7 @@ class _LoginPageState extends State<LoginPage> {
                           Expanded(
                             child: Divider(
                               thickness: 0.7,
-                              color: Colors.grey.withOpacity(0.5),
+                              color: const Color.fromARGB(255, 158, 158, 158).withOpacity(0.5),
                             ),
                           ),
                           const Padding(

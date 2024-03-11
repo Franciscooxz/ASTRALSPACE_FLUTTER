@@ -3,6 +3,8 @@ import 'package:astroguide_flutter/pages/menu.dart';
 import 'package:astroguide_flutter/pages/perfil.dart';
 import 'package:astroguide_flutter/pages/lecciones.dart';
 import 'package:astroguide_flutter/pages/post.dart';
+import 'package:astroguide_flutter/pages/welcome_page.dart';
+import 'package:astroguide_flutter/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -23,7 +25,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AstroGuide',
-      home: token == null ? const LoginPage() : const menu(),
+      theme: lightMode,
+      home: token == null ? const WelcomeScreen() : const menu(),
     );
   }
 }
